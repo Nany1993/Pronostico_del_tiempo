@@ -9,6 +9,7 @@ from datetime import datetime
 from twilio_config import TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, PHONE_NUMBER, API_KEY_WAPI
 from utils import send_twilio_message, get_forecast  # Importar funciones desde utils.py
 
+
 @app.get("/")
 def index():
     return {"mensaje" : "Bienvenidos al Prónostico del tiempo"}
