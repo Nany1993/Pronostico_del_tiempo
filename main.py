@@ -12,10 +12,17 @@ from utils import send_twilio_message, get_forecast  # Importar funciones desde 
 
 @app.get("/")
 def index():
+    """Inicialización de la API"""
     return {"mensaje" : "Bienvenidos al Prónostico del tiempo"}
 
 @app.get("/clima/{ciudad}/{hora}")
+
 def clima_ciudad_hora(ciudad: str, hora: int):
+    '''Esta función retorna los valore climaticos acorde a la ciudad
+    y hora ingresada en cualquier parte del mundo.
+    
+    Por favor incluya la ciudad sin tildes asi: Bogota
+    la hora se incluye en formato militar como entero así: 22'''    
     api_key = API_KEY_WAPI
     url_clima = f'http://api.weatherapi.com/v1/forecast.json?key={api_key}&q={ciudad}&days=1&aqi=no&alerts=no'
     response = requests.get(url_clima).json()
@@ -36,27 +43,3 @@ def clima_ciudad_hora(ciudad: str, hora: int):
     result[0]['prob_lluvia'] = f"{result[0]['prob_lluvia']}% de probabilidad de que llueva"
 
     return result
-
-
-
-
-"""@app.get("/Ciudad/{ciudad}")
-def pronostico(ciudad):
-    api_key = API_KEY_WAPI
-    url_clima = 'http://api.weatherapi.com/v1/forecast.json?key='+api_key+'&q='+ciudad+'&days=1&aqi=no&alerts=no'
-    response = requests.get(url_clima).json()
-    datos = []
-    Horas_Disponibles = len(response['forecast']['forecastday'][0]['hour'])
-    for i in range(Horas_Disponibles):
-        datos.append(get_forecast(response, i)) 
-
-    col = ['Fecha', 'Hora', 'Condicion', 'Temperatura', 'Lluvia', 'prob_lluvia']
-    df = pd.DataFrame(datos, columns=col)
-    df = df.sort_values(by='Hora', ascending=True)
-    df_rain = df[(df["Hora"] > 6) & (df["Hora"] < 22)]
-    df_rain = df_rain[["Hora", "Condicion", "Temperatura"]]
-    df_rain.set_index("Hora", inplace=True)
-    
-    return df_rain"""
-    
-    
