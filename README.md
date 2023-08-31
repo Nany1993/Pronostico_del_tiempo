@@ -35,3 +35,12 @@ Este proyecto tiene como objetivo brindar un servicio de consulta del pronóstic
 ## Conclusión
 
 Mediante la integración de Twilio, Python y la API de Weather en un proyecto basado en FastAPI, logramos brindar a los usuarios un acceso sencillo y conveniente al pronóstico del tiempo. Aunque la recepción de mensajes no está completamente automatizada en este punto, el proyecto demuestra cómo la combinación adecuada de diferentes tecnologías puede dar lugar a una solución útil y automatizada que satisface las necesidades de información de los usuarios de manera eficiente.
+
+### ¡No dudes en contactarme! 📬
+
+Estoy disponible en LinkedIn para colaborar en proyectos con un impacto real. **¡Conéctate conmigo y hagámoslo posible!** 🤝
+
+📧 Correo electrónico: anamariagarcia093@gmail.com
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ana%20Mar%C3%ADa%20Garc%C3%ADa%20Arias-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/anamaria1993/)
+
