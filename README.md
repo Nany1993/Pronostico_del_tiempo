@@ -1,5 +1,8 @@
 # Proyecto: Pronóstico del Tiempo con Twilio y FastAPI
 
+![Pipeline](Pipelines.png)
+
+
 ## Descripción
 
 Este proyecto tiene como objetivo brindar un servicio de consulta del pronóstico del tiempo a través de mensajes de texto enviados desde un dispositivo celular adquirido mediante [Twilio](https://console.twilio.com/). La información del pronóstico del tiempo se obtiene utilizando código Python que interactúa con la [API de Weather](https://www.weatherapi.com/).
@@ -11,6 +14,8 @@ Este proyecto tiene como objetivo brindar un servicio de consulta del pronóstic
 2. **Procesamiento en Python**: Utilizando Twilio, los mensajes recibidos se redirigen a nuestro sistema. Luego, mediante código en Python, se extrae la ubicación deseada del mensaje y se realiza una solicitud a la API de Weather para obtener los datos meteorológicos correspondientes.
 
 3. **FastAPI Framework**: Hemos implementado un servidor FastAPI que ofrece diversos endpoints para consultar el pronóstico del tiempo en diferentes fechas, horas y lugares. Este framework nos permite manejar las solicitudes de los usuarios y proporcionar respuestas precisas y rápidas.
+
+    Ver [Funcionamiento de la API desde la Web](https://pronostico-del-tiempo.onrender.com/docs)
 
 ## Características Principales
 
@@ -43,4 +48,14 @@ Estoy disponible en LinkedIn para colaborar en proyectos con un impacto real. **
 📧 Correo electrónico: anamariagarcia093@gmail.com
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ana%20Mar%C3%ADa%20Garc%C3%ADa%20Arias-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/anamaria1993/)
+
+
+--------------------------------------------------------------------------------------------------------------
+
+## Clonar Repositorio
+
+**Abra la consola CMD desde el buscador y pegue ese script para clonar Repositorio**
+
+```bash
+git clone https://github.com/Nany1993/Pronostico_del_tiempo
 
