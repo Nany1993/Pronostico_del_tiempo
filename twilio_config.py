@@ -1,4 +1,4 @@
-TWILIO_ACCOUNT_SID ='AC6e147ed0ea9cf984dcc67f6f712afc8a'
-TWILIO_AUTH_TOKEN ='0b42614e33326f758dd50990f83c629f'
-PHONE_NUMBER ='+18158699136'
-API_KEY_WAPI = '989746c555d44e2caf005936232908'
+TWILIO_ACCOUNT_SID ='tienesbuscartuscredencialesalmomentoderegistroentwilio'
+TWILIO_AUTH_TOKEN ='tienesbuscartutokenalmomentoderegistroentwilio'
+PHONE_NUMBER ='tienesquecomprartunumero'
+API_KEY_WAPI = 'tienesbuscartuscredencialesalmomentoderegistroenweatherapi'
