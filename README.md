@@ -13,7 +13,7 @@ Este proyecto tiene como objetivo brindar un servicio de consulta del pronóstic
 
 2. **Procesamiento en Python**: Utilizando Twilio, los mensajes recibidos se redirigen a nuestro sistema. Luego, mediante código en Python, se extrae la ubicación deseada del mensaje y se realiza una solicitud a la API de Weather para obtener los datos meteorológicos correspondientes.
 
-3. **FastAPI Framework**: Hemos implementado un servidor FastAPI que ofrece diversos endpoints para consultar el pronóstico del tiempo en diferentes fechas, horas y lugares. Este framework nos permite manejar las solicitudes de los usuarios y proporcionar respuestas precisas y rápidas.
+3. **FastAPI Framework**: Hemos implementado un servidor FastAPI que ofrece un endpoint para consultar el pronóstico del tiempo en diferentes  horas y lugares en el día. Este framework nos permite manejar las solicitudes de los usuarios y proporcionar respuestas precisas y rápidas.
 
     Ver [Funcionamiento de la API desde la Web](https://pronostico-del-tiempo.onrender.com/docs)
 
